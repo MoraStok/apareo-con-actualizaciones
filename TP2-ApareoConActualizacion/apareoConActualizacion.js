@@ -8,10 +8,13 @@ const util = require('util')
  * @param {string[]} claves las claves por las que quiero ordenar, por orden de importancia
  */
 function ordenar(coleccion, claves) {
-    var obj = [];
-    for(e in coleccion){
-        
-    }
+    coleccion.sort(function(a,b){
+        let i = 0;
+        let flag = true;
+        while( flag && i < claves.length){
+            
+        }
+    })
 }
 
 /**
