@@ -11,9 +11,18 @@ function ordenar(coleccion, claves) {
     coleccion.sort(function(a,b){
         let i = 0;
         let flag = true;
+        let result = 0;
         while( flag && i < claves.length){
-            
+            if( a[claves[i]] < b[claves[i]]){
+                flag = false;
+                result = -1;
+            }else{
+                flag = false;
+                result = 1;
+            }
+            i++;
         }
+        return result;
     })
 }
 
