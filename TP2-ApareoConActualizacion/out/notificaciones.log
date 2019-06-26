@@ -24,3 +24,450 @@ el siguiente pago no corresponde a ninguna deuda:
   pago: 100 }
 
 =================================
+
+error al querer actualizar esta deuda:
+{ id: 1, dni: 123, nombre: 'pepe', apellido: 'perez', debe: 400 }
+con este pago:
+{ dni: 123,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'pepe',
+  apellido: 'perez',
+  pago: 400 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 234,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'coca',
+  apellido: 'gutierrez',
+  pago: 400 }
+
+=================================
+
+error al querer actualizar esta deuda:
+{ id: 2,
+  dni: 234,
+  nombre: 'coca',
+  apellido: 'gutierrez',
+  debe: 300 }
+con este pago:
+{ dni: 234,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'coca',
+  apellido: 'gutierrez',
+  pago: 400 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 345,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'lisa',
+  apellido: 'fernandez',
+  pago: 100 }
+
+=================================
+
+error al querer actualizar esta deuda:
+{ id: 3,
+  dni: 345,
+  nombre: 'lisa',
+  apellido: 'fernandez',
+  debe: 200 }
+con este pago:
+{ dni: 345,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'lisa',
+  apellido: 'fernandez',
+  pago: 100 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 456,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'paul',
+  apellido: 'Ropez',
+  pago: 100 }
+
+=================================
+
+error al querer actualizar esta deuda:
+{ id: 4, dni: 456, nombre: 'paul', apellido: 'lopez', debe: 600 }
+con este pago:
+{ dni: 456,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'paul',
+  apellido: 'Ropez',
+  pago: 100 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 567,
+  fecha: '2019-03-22T17:13:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 50 }
+
+=================================
+
+error al querer actualizar esta deuda:
+{ id: 5,
+  dni: 567,
+  nombre: 'ariel',
+  apellido: 'martinez',
+  debe: 350 }
+con este pago:
+{ dni: 567,
+  fecha: '2019-03-22T17:13:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 50 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 567,
+  fecha: '2019-03-22T17:13:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 50 }
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 567,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 150 }
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 567,
+  fecha: '2019-03-22T17:00:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 30 }
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 678,
+  fecha: '2019-03-22T17:00:26.000Z',
+  nombre: 'daniela',
+  apellido: 'gimenez',
+  pago: 100 }
+
+=================================
+
+error al querer actualizar esta deuda:
+{ id: 1, dni: 123, nombre: 'pepe', apellido: 'perez', debe: 400 }
+con este pago:
+{ dni: 123,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'pepe',
+  apellido: 'perez',
+  pago: 400 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 234,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'coca',
+  apellido: 'gutierrez',
+  pago: 400 }
+
+=================================
+
+error al querer actualizar esta deuda:
+{ id: 2,
+  dni: 234,
+  nombre: 'coca',
+  apellido: 'gutierrez',
+  debe: 300 }
+con este pago:
+{ dni: 234,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'coca',
+  apellido: 'gutierrez',
+  pago: 400 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 345,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'lisa',
+  apellido: 'fernandez',
+  pago: 100 }
+
+=================================
+
+error al querer actualizar esta deuda:
+{ id: 3,
+  dni: 345,
+  nombre: 'lisa',
+  apellido: 'fernandez',
+  debe: 200 }
+con este pago:
+{ dni: 345,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'lisa',
+  apellido: 'fernandez',
+  pago: 100 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 456,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'paul',
+  apellido: 'Ropez',
+  pago: 100 }
+
+=================================
+
+error al querer actualizar esta deuda:
+{ id: 4, dni: 456, nombre: 'paul', apellido: 'lopez', debe: 600 }
+con este pago:
+{ dni: 456,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'paul',
+  apellido: 'Ropez',
+  pago: 100 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 567,
+  fecha: '2019-03-22T17:13:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 50 }
+
+=================================
+
+error al querer actualizar esta deuda:
+{ id: 5,
+  dni: 567,
+  nombre: 'ariel',
+  apellido: 'martinez',
+  debe: 350 }
+con este pago:
+{ dni: 567,
+  fecha: '2019-03-22T17:13:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 50 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 567,
+  fecha: '2019-03-22T17:13:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 50 }
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 567,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 150 }
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 567,
+  fecha: '2019-03-22T17:00:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 30 }
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 678,
+  fecha: '2019-03-22T17:00:26.000Z',
+  nombre: 'daniela',
+  apellido: 'gimenez',
+  pago: 100 }
+
+=================================
+
+error al querer actualizar esta deuda:
+{ id: 1, dni: 123, nombre: 'pepe', apellido: 'perez', debe: 400 }
+con este pago:
+{ dni: 123,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'pepe',
+  apellido: 'perez',
+  pago: 400 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 234,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'coca',
+  apellido: 'gutierrez',
+  pago: 400 }
+
+=================================
+
+error al querer actualizar esta deuda:
+{ id: 2,
+  dni: 234,
+  nombre: 'coca',
+  apellido: 'gutierrez',
+  debe: 300 }
+con este pago:
+{ dni: 234,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'coca',
+  apellido: 'gutierrez',
+  pago: 400 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 345,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'lisa',
+  apellido: 'fernandez',
+  pago: 100 }
+
+=================================
+
+error al querer actualizar esta deuda:
+{ id: 3,
+  dni: 345,
+  nombre: 'lisa',
+  apellido: 'fernandez',
+  debe: 200 }
+con este pago:
+{ dni: 345,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'lisa',
+  apellido: 'fernandez',
+  pago: 100 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 456,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'paul',
+  apellido: 'Ropez',
+  pago: 100 }
+
+=================================
+
+error al querer actualizar esta deuda:
+{ id: 4, dni: 456, nombre: 'paul', apellido: 'lopez', debe: 600 }
+con este pago:
+{ dni: 456,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'paul',
+  apellido: 'Ropez',
+  pago: 100 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 567,
+  fecha: '2019-03-22T17:13:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 50 }
+
+=================================
+
+error al querer actualizar esta deuda:
+{ id: 5,
+  dni: 567,
+  nombre: 'ariel',
+  apellido: 'martinez',
+  debe: 350 }
+con este pago:
+{ dni: 567,
+  fecha: '2019-03-22T17:13:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 50 }
+
+se mantiene el registro original sin cambios
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 567,
+  fecha: '2019-03-22T17:13:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 50 }
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 567,
+  fecha: '2019-03-23T17:13:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 150 }
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 567,
+  fecha: '2019-03-22T17:00:26.000Z',
+  nombre: 'ariel',
+  apellido: 'martinez',
+  pago: 30 }
+
+=================================
+
+el siguiente pago no corresponde a ninguna deuda:
+{ dni: 678,
+  fecha: '2019-03-22T17:00:26.000Z',
+  nombre: 'daniela',
+  apellido: 'gimenez',
+  pago: 100 }
+
+=================================

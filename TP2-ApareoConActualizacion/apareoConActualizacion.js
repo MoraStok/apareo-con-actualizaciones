@@ -11,9 +11,18 @@ function ordenar(coleccion, claves) {
     coleccion.sort(function(a,b){
         let i = 0;
         let flag = true;
+        let result = 0;
         while( flag && i < claves.length){
-            
+            if(a[claves[i]] < b[claves[i]]){
+                flag = false;
+                result = -1;
+            }else{
+                flag = false;
+                result = 1;
+            }
+            i++;
         }
+        return result;
     })
 }
 
@@ -25,7 +34,21 @@ function ordenar(coleccion, claves) {
  * @param {string} rutaLog 
  */
 function actualizarArchivosDeudas(rutaDeudasOld, rutaPagos, rutaDeudasNew, rutaLog) {
-    throw new Error('falta implementar!')
+    const deudasString = fs.readFileSync( rutaDeudasOld, 'utf-8' );
+    const deudasJson = JSON.parse( deudasString );
+    ordenar( deudasJson, ['dni']);
+
+    const pagosString = fs.readFileSync( rutaPagos, 'utf-8' );
+    const pagosJson = JSON.parse( pagosString );
+    ordenar( pagosJson, ['dni', 'fecha'] );
+    console.log(pagosJson);
+
+    const deudasActualizadas = actualizarDeudas(deudasJson, pagosJson, msg => {
+        fs.appendFileSync(rutaLog, msg);
+    })
+
+    const newDeudas = JSON.stringify(deudasActualizadas, null, 4);
+    fs.writeFileSync(rutaDeudasNew, newDeudas);
 }
 
 /**
@@ -41,7 +64,36 @@ function actualizarArchivosDeudas(rutaDeudasOld, rutaPagos, rutaDeudasNew, rutaL
  * @returns {Object[]} las deudas actualizadas
  */
 function actualizarDeudas(deudas, pagos, logger) {
-	throw new Error('falta implementar!')
+	let deudasActualizadas = [];
+    let i = 0;
+    let j = 0;
+
+    while( i < pagos.length || j < deudas.length ){
+        if( i >= pagos.length ){
+            deudasActualizadas.push(deudas[j]);
+            j++
+        }else if( j >= deudas.length ){ 
+            logger(armarMsgPagoSinDeudaAsociada(pagos[i]));
+            i++
+        }else if( pagos[i].dni < deudas[j].dni ){
+            logger(armarMsgPagoSinDeudaAsociada(pagos[j]));
+            i++
+        }else if( deudas[j].dni < pagos[i].dni ){
+            if(deudas[j].debe < 0){
+                logger(armarMsgPagoDeMas(deudas[i]));
+            }else{
+                deudasActualizadas.push(deudas[j]);
+            }
+            j++
+        }else{
+            if(pagos[i].apellido == deudas.apellido){
+                deudas[j].debe -= pagos[i].pago;
+            }else{
+                logger(armarMsgPagoConDatosErroneos(deudas[j], pagos[i]));
+            }
+            j++
+        }
+    }
 }
 
 /**
